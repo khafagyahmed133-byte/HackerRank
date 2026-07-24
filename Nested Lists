@@ -1,0 +1,25 @@
+if __name__ == '__main__':
+    students = []    
+    scores = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        students.append([name , score])
+        scores.append(score)
+    scores.sort()
+    k = 0
+    for i in scores:
+        for j in scores:
+            if i < j:
+                k = j
+                b = 1
+                break    
+        if b == 1:
+            break
+    names = []
+    for u in students:
+        if u[1] == k:
+            names.append(u[0])
+    names.sort()
+    for i in names:
+        print(i) 
