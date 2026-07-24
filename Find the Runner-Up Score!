@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    k = 0
+    n = int(input())
+    arr = map(int, input().split())
+    arr1 = sorted(arr , reverse = True)
+    for i in arr1:
+        for j in arr1:
+            if i > j :
+                k = j
+                b = 1
+                break
+        if b == 1:
+            break
+               
+    print(k)   
