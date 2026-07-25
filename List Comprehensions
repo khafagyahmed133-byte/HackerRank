@@ -1,0 +1,7 @@
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+    coordinates = [[i , u , o] for i in range(x + 1) for u in range(y + 1) for o in range(z + 1) if sum([i , u , o ]) != n ]
+    print(coordinates)
